@@ -82,3 +82,21 @@ h1,h2,h3,h4 {
     background: url('img/bgReel.jpg') center center no-repeat;
     background-size: cover;
 }
+.servicios {
+    background: #000;
+}
+.servicios .overlay {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: ease-in 0.5s;
+    -webkit-transition: ease-in 0.5s;
+}
+.servicios .overlay:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.row-btn {
+    position: relative;
+    top:440px;
+    z-index: 99;
+}
