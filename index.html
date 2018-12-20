@@ -19,41 +19,79 @@
 </head>
 
 <body>
-    <ul class="nav justify-content-center" id="myMenu">
-        <li data-menuanchor="somos" class="active nav-item">
-            <a href="#somos" class="nav-link active">Quienes Somos</a>
-        </li>
-        <li data-menuanchor="servicios" class="nav-item">
-            <a href="#servicios" class="nav-link">Servicios</a>
-        </li>
-        <li data-menuanchor="reel" class="nav-item">
-            <a href="#reel" class="nav-link">Reel</a>
-        </li>
-        <li data-menuanchor="equipo" class="nav-item">
-            <a href="#equipo" class="nav-link">Equipo</a>
-        </li>
-        <li data-menuanchor="clientes" class="nav-item">
-            <a href="#clientes" class="nav-link">Clientes</a>
-        </li>
-        <li data-menuanchor="marcas" class="nav-item">
-            <a href="#marcas" class="nav-link">Marcas propias</a>
-        </li>
-        <li data-menuanchor="blog" class="nav-item">
-            <a href="#blog" class="nav-link">Blog</a>
-        </li>
-        <li data-menuanchor="contacto" class="nav-item">
-            <a href="#contacto" class="nav-link">Contacto</a>
-        </li>
-    </ul>
+    <nav class="navbar">
+        <ul class="nav justify-content-center" id="myMenu">
+            <li data-menuanchor="somos" class="active nav-item">
+                <a href="#somos" class="nav-link active">Quienes Somos</a>
+            </li>
+            <li data-menuanchor="servicios" class="nav-item">
+                <a href="#servicios" class="nav-link">Servicios</a>
+            </li>
+            <li data-menuanchor="reel" class="nav-item">
+                <a href="#reel" class="nav-link">Reel</a>
+            </li>
+            <li data-menuanchor="equipo" class="nav-item">
+                <a href="#equipo" class="nav-link">Equipo</a>
+            </li>
+            <li data-menuanchor="home" class="nav-item text-center">
+                <a href="#home" class="nav-link"><img src="img/CooKing-Logo.png" alt="" class="w-75 "></a>
+            </li>
+            <li data-menuanchor="clientes" class="nav-item">
+                <a href="#clientes" class="nav-link">Clientes</a>
+            </li>
+            <li data-menuanchor="marcas" class="nav-item">
+                <a href="#marcas" class="nav-link">Marcas propias</a>
+            </li>
+            <li data-menuanchor="blog" class="nav-item">
+                <a href="#blog" class="nav-link">Blog</a>
+            </li>
+            <li data-menuanchor="contacto" class="nav-item">
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </li>
+        </ul>
+    </nav>
     <div id="fullpage">
-        <div class="section">Some section1 </div>
-        <div class="section">Some section 2</div>
-        <div class="section">Some section 3</div>
-        <div class="section">Some section 4</div>
-        <div class="section">Some section 2</div>
-        <div class="section">Some section 3</div>
-        <div class="section">Some section 4</div>
-        <div class="section">Some section 4</div>
+        <div class="home section">
+            <div class="container-fluid d-flex align-items-end h-100">
+                <div class="row w-100 pb-5">
+                    <div class="col-6 text-right px-4">
+                        <img src="img/home-btn-01.png" alt="" class="w-25">
+                    </div>
+                    <div class="col-6 px-4">
+                        <img src="img/home-btn-02.png" alt="" class="w-25">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="somos section">
+            <div class="container-fluid d-flex align-items-center h-100 marquito">
+                <div class="row w-100 no-gutters">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <h2 class="text-center">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit. Phasellus
+                            pulvinar augue </h2>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section reel">
+            <div class="container-fluid d-flex align-items-end h-100">
+                <div class="row w-100">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <img src="img/tele.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section">Reel</div>
+        <div class="section">Equipo</div>
+        <div class="section">Clientes</div>
+        <div class="section">Marcas propias</div>
+        <div class="section">Blog</div>
+        <div class="section">Contacto</div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -69,7 +107,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
     <script>
         new fullpage('#fullpage', {
-            anchors: ['somos', 'servicios', 'reel', 'equipo', 'clientes', 'marcas', 'blog', 'contacto'],
+            anchors: ['home', 'somos', 'servicios', 'reel', 'equipo', 'clientes', 'marcas', 'blog', 'contacto'],
             menu: '#myMenu'
         });
     </script>
