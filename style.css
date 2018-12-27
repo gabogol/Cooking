@@ -48,30 +48,49 @@ h1,h2,h3,h4 {
 }
 
 /********** Nav *********+*/
-
-.nav {
-    width: 100%;
+.navbar {
     background: #000;
     color: #fff;
-    font-kerning: auto;
     letter-spacing: 3px;
-    height: 50px;
-    line-height: 34px;
+    z-index: 999;
+    /*
     position: fixed;
     top:0;
     left:0;
     overflow: hidden;
-    z-index: 99;
+    */
+    }
+.navbar-brand {
+    margin-right: 0;
 }
+
+
 
 /********** Secciones *********+*/
 .home {
     background: url('img/bgHome.jpg') center center no-repeat;
     background-size: cover;
 }
+.home .container .row {
+    height: 80vh;
+}
+.btn-home {
+    -webkit-filter: brightness(0.7);
+    filter: brightness(0.7);
+    transition: ease-in 0.5s;
+    -webkit-transition: ease-in 0.5s;
+    cursor: pointer;
+}
+.btn-home:hover {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
 .somos {
     background: url('img/bgSomos.jpg') center center no-repeat;
     background-size: cover;
+}
+.somos .container .row {
+    height: 80vh;
 }
 .somos h2 {
     text-shadow: #000 2px 3px 3px;
@@ -79,12 +98,33 @@ h1,h2,h3,h4 {
 .somos .marquito {
     background: url('img/marquito.png') center center no-repeat;
 }
+
 .reel {
     background: url('img/bgReel.jpg') center center no-repeat;
     background-size: cover;
 }
+.reel .container .row {
+    height: 100vh;
+}
+
+.modal-content {
+    background: transparent;
+}
+.close {
+    float: right;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 1;
+}
+.close:hover {
+    color: rgb(204, 204, 204) !important;
+}
+
 .servicios {
-    background: #000;
+    background: #000 center center;
 }
 .servicios .overlay {
     -webkit-filter: grayscale(100%);
@@ -100,4 +140,97 @@ h1,h2,h3,h4 {
     position: relative;
     top:440px;
     z-index: 99;
+}
+.clientes {
+    background: url('img/bgClientes.jpg') center center no-repeat;
+    background-size: cover;
+}
+.clientes .container {
+    margin-top:16%;
+    width: 70%;
+}
+
+.marcas {
+    background: url('img/bgMarcas.jpg') center center no-repeat;
+    background-size: cover;
+}
+.btn-marca {
+    -webkit-filter: drop-shadow(0px 0px 0px #ffffcd8c);
+    filter: drop-shadow(0px 0px 0px #ffffcd8c);
+    transition: ease-in 0.3s;
+    -webkit-transition: ease-in 0.3s;
+}
+.btn-marca:hover{
+    -webkit-filter: drop-shadow(2px 3px 10px#ffffcd8c);
+    filter: drop-shadow(2px 3px 10px #ffffcd8c);
+}
+.contacto {
+    background: url('img/bgContacto1.jpg') center center no-repeat;
+    background-size: cover;
+}
+.contacto h2 {
+    letter-spacing: 10px;
+}
+.contacto .container {
+    margin-top: 13%;
+}
+.contacto .marquito2 {
+    background: url('img/marquitocontacto.png') center center no-repeat;
+    background-size: contain;
+}
+
+
+
+/********** Responsive *********+*/
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 1200px;
+        margin: 1.75rem auto;
+    }
+}
+@media (max-width: 1024px) {
+    .clientes {
+        background: url('img/bgClientesMobile.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .clientes .container {
+        margin-top:5%;
+        width: 90%;
+    }
+    .marcas {
+        background: url('img/bgMarcasMobile.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .marcas .container-fluid {
+        margin-top: 10%;
+    }
+    .contacto {
+        background: url('img/bgContactomobile.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .contacto .container-fluid {
+        margin-top: 25%;
+    }
+    
+}
+@media (max-width: 767px){
+    .somos .marquito {
+        background: url('img/marquitom.png') center center no-repeat;
+        background-size: contain;
+    } 
+    .contacto .marquito2 {
+        background: url('img/marquitocontactomobile.png') center center no-repeat;
+        background-size: contain;
+    }
+}
+@media (max-width: 576px) {
+    .reel .container .row {
+        height: 90vh;
+    }
 }
