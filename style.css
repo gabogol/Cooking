@@ -101,3 +101,22 @@ h1,h2,h3,h4 {
     top:440px;
     z-index: 99;
 }
+.clientes {
+    background: url('img/bgClientes.jpg') center center no-repeat;
+    background-size: cover;
+}
+.marcas {
+    background: url('img/bgMarcas.jpg') center center no-repeat;
+    background-size: cover;
+}
+.contacto {
+    background: url('img/bgContacto.jpg') center center no-repeat;
+    background-size: cover;
+}
+.contacto h2 {
+    letter-spacing: 6px;
+}
+.marquitocontacto {
+    background: url('img/marquitocontacto.png') center center no-repeat;
+    background-size: contain;
+}
