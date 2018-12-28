@@ -63,8 +63,12 @@ h1,h2,h3,h4 {
 .navbar-brand {
     margin-right: 0;
 }
-
-
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #ffc107;
+}
 
 /********** Secciones *********+*/
 .home {
@@ -224,13 +228,14 @@ h1,h2,h3,h4 {
         background: url('img/marquitom.png') center center no-repeat;
         background-size: contain;
     } 
-    .contacto .marquito2 {
-        background: url('img/marquitocontactomobile.png') center center no-repeat;
-        background-size: contain;
-    }
+    
 }
 @media (max-width: 576px) {
     .reel .container .row {
         height: 90vh;
+    }
+    .contacto .marquito2 {
+        background: url('img/marquitocontactomobile.png') center center no-repeat;
+        background-size: contain;
     }
 }
