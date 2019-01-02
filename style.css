@@ -108,7 +108,7 @@ h1,h2,h3,h4 {
     background-size: cover;
 }
 .reel .container .row {
-    height: 100vh;
+    height: 110vh;
 }
 
 .modal-content {
@@ -199,6 +199,9 @@ h1,h2,h3,h4 {
     }
 }
 @media (max-width: 1024px) {
+    .somos {
+        background: url('img/bgSomosmobile.jpg') center center no-repeat;
+    }
     .clientes {
         background: url('img/bgClientesMobile.jpg') center center no-repeat;
         background-size: cover;
@@ -207,6 +210,10 @@ h1,h2,h3,h4 {
         margin-top:5%;
         width: 90%;
     }
+    .reel {
+        background: url('img/bgReelMobile.jpg') center center no-repeat;
+        background-size: cover;
+    }
     .marcas {
         background: url('img/bgMarcasMobile.jpg') center center no-repeat;
         background-size: cover;
@@ -214,13 +221,11 @@ h1,h2,h3,h4 {
     .marcas .container-fluid {
         margin-top: 10%;
     }
-    .contacto {
-        background: url('img/bgContactomobile.jpg') center center no-repeat;
-        background-size: cover;
-    }
+
     .contacto .container-fluid {
-        margin-top: 25%;
+        margin-top: 15%;
     }
+    
     
 }
 @media (max-width: 767px){
@@ -228,14 +233,14 @@ h1,h2,h3,h4 {
         background: url('img/marquitom.png') center center no-repeat;
         background-size: contain;
     } 
+    .contacto .marquito2 {
+        background: none;
+    }
     
 }
 @media (max-width: 576px) {
     .reel .container .row {
         height: 90vh;
     }
-    .contacto .marquito2 {
-        background: url('img/marquitocontactomobile.png') center center no-repeat;
-        background-size: contain;
-    }
+    
 }
