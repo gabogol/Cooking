@@ -160,7 +160,6 @@ h1,h2,h3,h4 {
     filter: grayscale(100%);
     transition: ease-in 0.5s;
     -webkit-transition: ease-in 0.5s;
-
 }
 .servicios .overlay:hover {
     -webkit-filter: grayscale(0%);
@@ -185,6 +184,7 @@ h1,h2,h3,h4 {
     position: absolute;
     top:50%;
     left:50%;
+    width: 80%;
     transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
