@@ -79,15 +79,15 @@ h1,h2,h3,h4 {
     height: 80vh;
 }
 .btn-home {
-    -webkit-filter: brightness(0.7);
-    filter: brightness(0.7);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
     transition: ease-in 0.5s;
     -webkit-transition: ease-in 0.5s;
     cursor: pointer;
 }
 .btn-home:hover {
-    -webkit-filter: brightness(1);
-    filter: brightness(1);
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 .somos {
     background: url('img/bgSomos.jpg') center center no-repeat;
@@ -130,20 +130,63 @@ h1,h2,h3,h4 {
 .servicios {
     background: #000 center center;
 }
+
+.kol1 {
+    opacity: 0.2;
+    transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+    background: #000;
+}
+.kol2 {
+    opacity: 0.2;
+    transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+    background: #000;
+}
+.btn-col {
+    position: relative;
+}
+.btn-row {
+   position: absolute;
+   top:50%;
+   left: 50%;
+   right: -50%;
+   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+   z-index: 999;
+}
 .servicios .overlay {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     transition: ease-in 0.5s;
     -webkit-transition: ease-in 0.5s;
+
 }
 .servicios .overlay:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
-.row-btn {
-    position: relative;
-    top:440px;
-    z-index: 99;
+.cajatexto {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: ease-in 0.5s ;
+  -webkit-transition: ease-in 0.5s;
+}
+.cajatexto:hover {
+    opacity: 1;
+}
+.texto {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 .clientes {
     background: url('img/bgClientes.jpg') center center no-repeat;

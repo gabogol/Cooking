@@ -91,78 +91,85 @@
                 </div>
             </div>
         </div>
+
         <div class="servicios section">
-            <div class="container-fluid p-0 no-gutters">
-                <div class="row text-center">
-                    <div class="col-6">
-                        <img src="img/home-btn-01.png" alt="" class="img-fluid">
+            <div class="container-fluid p-0 no-gutters btn-col">
+                <div class="row text-center btn-row">
+                    <div class="col">
+                        <a href="#" target="" class="btn-home" id="btn1">
+                            <img src="img/home-btn-01.png" alt="" class="img-fluid">
+                        </a>
                     </div>
-                    <div class="col-6">
-                        <img src="img/home-btn-02.png" alt="" class="img-fluid">
+                    <div class="col">
+                        <a href="#" target="" class="btn-home" id="btn2">
+                            <img src="img/home-btn-02.png" alt="" class="img-fluid">
+                        </a>
                     </div>
                 </div>
                 <div class="row no-gutters text-center">
-                    <div class="col-6 p-0 h-100 ">
-                        <div class="row p-0 no-gutters align-content-stretch flex-wrap">
+                    <div class="col-6 p-0 h-100" id="branded">
+                        <div class="row p-0 no-gutters">
                             <div class="col">
-                                <img src="img/sc01.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv01.png" alt="" class="overlay img-fluid">
+                                <div class="cajatexto">
+                                    <div class="texto">
+                                        <h5 class="text-center">el texto</h5>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col">
-                                <img src="img/sc02.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv02.png" alt="" class="overlay img-fluid">
                             </div>
                             <div class="col">
-                                <img src="img/sc03.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv03.png" alt="" class="overlay img-fluid">
                             </div>
                             <div class="col">
-                                <img src="img/sc04.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv04.png" alt="" class="overlay img-fluid">
                             </div>
                         </div>
                         <div class="row p-0 no-gutters">
                             <div class="col">
-                                <img src="img/sc08.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv05.png" alt="" class="overlay img-fluid">
                             </div>
                             <div class="col">
-                                <img src="img/sc09.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv06.png" alt="" class="overlay img-fluid">
                             </div>
                             <div class="col">
-                                <img src="img/sc10.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv07.png" alt="" class="overlay img-fluid">
                             </div>
                             <div class="col">
-                                <img src="img/sc11.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv08.png" alt="" class="overlay img-fluid">
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-6 p-0 h-100">
+                    <div class="col-6 p-0 h-100 kol2" id="television">
                         <div class="row p-0 no-gutters">
                             <div class="col">
-                                <img src="img/sc05.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv21.png" alt="" class="overlay img-fluid">
                             </div>
                             <div class="col">
-                                <img src="img/sc06.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv22.png" alt="" class="overlay img-fluid">
                             </div>
                             <div class="col">
-                                <img src="img/sc07.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv23.png" alt="" class="overlay img-fluid">
                             </div>
                         </div>
                         <div class="row p-0 no-gutters">
                             <div class="col">
-                                <img src="img/sc12.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv24.png" alt="" class="overlay img-fluid">
                             </div>
                             <div class="col">
-                                <img src="img/sc13.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv25.png" alt="" class="overlay img-fluid">
                             </div>
                             <div class="col">
-                                <img src="img/sc14.png" alt="" class="overlay img-fluid">
+                                <img src="img/serv26.png" alt="" class="overlay img-fluid">
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
         </div>
+
         <div class="reel section">
             <div class="container">
                 <div class="row align-items-end">
@@ -275,6 +282,19 @@
             anchors: ['home', 'somos', 'servicios', 'reel', 'equipo', 'clientes', 'marcas', 'blog', 'contacto'],
             menu: '#myMenu'
         });
+    </script>
+    <!--btn servicios-->
+    <script>
+        $('#btn2').hover(
+            function () {
+                $('#television').removeClass('kol2');
+                $('#branded').addClass('kol1');
+            });
+        $('#btn1').hover(
+            function () {
+                $('#television').addClass('kol2');
+                $('#branded').removeClass('kol1');
+            });
     </script>
 </body>
 
