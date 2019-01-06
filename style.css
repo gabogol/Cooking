@@ -188,6 +188,51 @@ h1,h2,h3,h4 {
     transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+.televisionmobile {
+    background: url('img/televisionmobile.jpg') center center no-repeat;
+}
+.brandedmobile {
+    background: url('img/brandedmobile.jpg') center center no-repeat;
+}
+/* Menu Servicios Mobile */
+.sidenav {
+    height: 100%; 
+    width: 0;
+    position: fixed; 
+    z-index: 999; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px;
+    opacity: .9;
+    transition: ease-in-out 0.5s; 
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: linear 0.5s;
+  }
+  
+  .sidenav a:hover {
+    color: #ffc107;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .col-menu {
+      line-height: 2em;
+  }
+
 .clientes {
     background: url('img/bgClientes.jpg') center center no-repeat;
     background-size: cover;
@@ -242,9 +287,7 @@ h1,h2,h3,h4 {
     }
 }
 @media (max-width: 1024px) {
-    .somos {
-        background: url('img/bgSomosmobile.jpg') center center no-repeat;
-    }
+    
     .clientes {
         background: url('img/bgClientesMobile.jpg') center center no-repeat;
         background-size: cover;
@@ -276,6 +319,12 @@ h1,h2,h3,h4 {
         background: url('img/marquitom.png') center center no-repeat;
         background-size: contain;
     } 
+    .somos {
+        background: url('img/bgSomosmobile.jpg') center top no-repeat;
+    }
+    .servicios .container-fluid .row {
+        height: 100vh;
+    }
     .contacto .marquito2 {
         background: none;
     }
@@ -285,5 +334,10 @@ h1,h2,h3,h4 {
     .reel .container .row {
         height: 90vh;
     }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
     
 }
+
+
+  
