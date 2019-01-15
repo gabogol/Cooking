@@ -119,8 +119,11 @@
                                 <img src="img/serv01.png" alt="" class="img-fluid">
                                 <div class="cajatexto">
                                     <div class="texto">
-                                        <h5 class="text-center">tvn/coca-cola</h5>
-                                        <p class="text-center">#actitudre</p>
+                                        <a data-toggle="modal" data-target="#servicios01">
+                                            <h5 class="text-center">tvn/coca-cola</h5>
+                                            <p class="text-center">#actitudre</p>
+                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -263,7 +266,7 @@
                         <img src="img/home-btn-02.png" alt="" class="img-fluid">
                     </div>
                     <div class="col-12 col-menu">
-                        <a href="#">Rápidos & Sabrosos</a>
+                        <a data-toggle="modal" data-target="#servicios01">Rápidos & Sabrosos</a>
                         <a href="#">Descubre Chileby Land Rover</a>
                         <a href="#">Yo veo bio bio</a>
                         <a href="#">copa culinaria Carozzi</a>
@@ -390,7 +393,7 @@
     </div>
 
     <!--videoModal-->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal fade modal-video" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
 
@@ -407,6 +410,28 @@
             </div>
         </div>
     </div>
+    <!--servicviosModal1-->
+    <div class="modal fade modal-servicios" id="servicios01" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog text-center modal-lg" role="document">
+            <div class="modal-content ">
+                <div class="modal-body">
+                    <a class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </a>
+                    <h2 class="display-4 pb-3">Titulo</h2>
+                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eveniet fugiat minima.
+                        Eos qui accusamus iusto facere aut, distinctio non. Sed sapiente culpa hic eaque illo similique
+                        qui, distinctio optio.</h5>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-1by1">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/243244233"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

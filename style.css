@@ -111,7 +111,7 @@ h1,h2,h3,h4 {
     height: 110vh;
 }
 
-.modal-content {
+#videoModal {
     background: transparent;
 }
 .close {
@@ -185,8 +185,15 @@ h1,h2,h3,h4 {
     top:50%;
     left:50%;
     width: 80%;
+    cursor: pointer;
     transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+.modal-servicios .modal-content {
+    background: #000000de; 
+}
+.modal-servicios .embed-responsive-1by1::before {
+    padding-top: 60%;
 }
 .televisionmobile {
     background: url('img/televisionmobile.jpg') center center no-repeat;
@@ -281,9 +288,14 @@ h1,h2,h3,h4 {
     }
 }
 @media (min-width: 576px) {
-    .modal-dialog {
+    #videoModal .modal-dialog {
         max-width: 1200px;
         margin: 1.75rem auto;
+    }
+    .modal-servicios .modal-content {
+        -webkit-box-shadow: 0px 1px 7px 3px rgba(255,193,7,0.85);
+        -moz-box-shadow: 0px 1px 7px 3px rgba(255,193,7,0.85);
+        box-shadow: 0px 1px 7px 3px rgba(255,193,7,0.85);   
     }
 }
 @media (max-width: 1024px) {
@@ -336,6 +348,9 @@ h1,h2,h3,h4 {
     }
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    .modal-servicios .modal-body {
+        height: 100vh;
+    } 
     
 }
 
