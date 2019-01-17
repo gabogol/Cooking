@@ -336,6 +336,61 @@ h1,h2,h3,h4 {
     -webkit-filter: drop-shadow(2px 3px 10px#ffffcd8c);
     filter: drop-shadow(2px 3px 10px #ffffcd8c);
 }
+/********** Blog *********+*/
+.blog .rowblog {
+    height: 100vh;;
+} 
+.blog .col-3 {
+    background: url('img/bgBlog.jpg') top center no-repeat;
+    background-size: cover;
+}
+.blog .col-9 {
+    background: url('img/bgEntradas.jpg') top center no-repeat;
+    background-size: 100% 100%;
+}
+.blog .card {
+    color: #000;
+    text-align: center;
+}
+.blog .card-title {
+    color: #000;
+}
+.blog .btn-card {
+    background: #000;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 25px 0;
+    border: 5px solid white;
+    margin: 5px;
+    box-shadow: 0 0 1px 1px #000;
+    color: #fff;
+
+}
+.blog .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: inherit;
+    bottom: 3%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 80%;
+    color: #000;
+    font-size: 2em;
+    text-align: center;
+    height: 15%;
+    opacity: 1;
+}
+.blog .articulo {
+    color: #000;
+    background: #fff;
+    text-align: center;
+    height: 100%;
+}
+
 /********** Contacto *********+*/
 .contacto {
     background: url('img/bgContacto1.jpg') center center no-repeat;
