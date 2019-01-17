@@ -71,6 +71,8 @@ h1,h2,h3,h4 {
 }
 
 /********** Secciones *********+*/
+
+/********** Home *********+*/
 .home {
     background: url('img/bgHome.jpg') center center no-repeat;
     background-size: cover;
@@ -89,6 +91,7 @@ h1,h2,h3,h4 {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
+/********** Somos *********+*/
 .somos {
     background: url('img/bgSomos.jpg') center center no-repeat;
     background-size: cover;
@@ -102,7 +105,7 @@ h1,h2,h3,h4 {
 .somos .marquito {
     background: url('img/marquito.png') center center no-repeat;
 }
-
+/********** Reel *********+*/
 .reel {
     background: url('img/bgReel.jpg') center center no-repeat;
     background-size: cover;
@@ -126,7 +129,7 @@ h1,h2,h3,h4 {
 .close:hover {
     color: rgb(204, 204, 204) !important;
 }
-
+/********** Servicios *********+*/
 .servicios {
     background: #000 center center;
 }
@@ -239,7 +242,7 @@ h1,h2,h3,h4 {
   .col-menu {
       line-height: 2em;
   }
-
+/********** Clientes *********+*/
 .clientes {
     background: url('img/bgClientes.jpg') center center no-repeat;
     background-size: cover;
@@ -248,7 +251,7 @@ h1,h2,h3,h4 {
     margin-top:16%;
     width: 70%;
 }
-
+/********** Marcas *********+*/
 .marcas {
     background: url('img/bgMarcas.jpg') center center no-repeat;
     background-size: cover;
@@ -263,6 +266,7 @@ h1,h2,h3,h4 {
     -webkit-filter: drop-shadow(2px 3px 10px#ffffcd8c);
     filter: drop-shadow(2px 3px 10px #ffffcd8c);
 }
+/********** Contacto *********+*/
 .contacto {
     background: url('img/bgContacto1.jpg') center center no-repeat;
     background-size: cover;
