@@ -71,6 +71,7 @@ h1,h2,h3,h4 {
 }
 
 /********** Secciones *********+*/
+/********** Home *********+*/
 .home {
     background: url('img/bgHome.jpg') center center no-repeat;
     background-size: cover;
@@ -89,6 +90,7 @@ h1,h2,h3,h4 {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
+/********** Somos *********+*/
 .somos {
     background: url('img/bgSomos.jpg') center center no-repeat;
     background-size: cover;
@@ -102,7 +104,7 @@ h1,h2,h3,h4 {
 .somos .marquito {
     background: url('img/marquito.png') center center no-repeat;
 }
-
+/********** Reel *********+*/
 .reel {
     background: url('img/bgReel.jpg') center center no-repeat;
     background-size: cover;
@@ -110,7 +112,6 @@ h1,h2,h3,h4 {
 .reel .container .row {
     height: 110vh;
 }
-
 #videoModal {
     background: transparent;
 }
@@ -126,7 +127,64 @@ h1,h2,h3,h4 {
 .close:hover {
     color: rgb(204, 204, 204) !important;
 }
+/********** Equipo *********+*/
+.equipo {
+    background: url('img/bgEquipo.jpg') center top no-repeat;
+    background-size: cover;
+}
 
+.equipo .txt-equipo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1.5s all;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 46%, rgba(0,0,0,0.8) 92%, rgba(0,0,0,0.8) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 46%,rgba(0,0,0,0.8) 92%,rgba(0,0,0,0.8) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 46%,rgba(0,0,0,0.8) 92%,rgba(0,0,0,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e6000000',GradientType=0 );
+}
+.equipo .box-equipo:hover .txt-equipo {
+    opacity: 1;
+}
+.equipo .nombre {
+    color: white;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+    -webkit-transform: translate(-5%, -50%);
+    -ms-transform: translate(-5%, -50%);
+    transform: translate(-5%, -50%);
+    text-align: right;
+}
+.equipo .nombre .apellido {
+    letter-spacing: 4px;
+}
+.equipo .box-equipo {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.equipo .col-equipo {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.equipo .box-equipo img {
+    -webkit-transition: 12s all;
+    transition: 2s all;
+}
+.equipo .box-equipo:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/********** Servicios *********+*/
 .servicios {
     background: #000 center center;
 }
@@ -239,7 +297,7 @@ h1,h2,h3,h4 {
   .col-menu {
       line-height: 2em;
   }
-
+/********** Clientes *********+*/
 .clientes {
     background: url('img/bgClientes.jpg') center center no-repeat;
     background-size: cover;
@@ -248,7 +306,7 @@ h1,h2,h3,h4 {
     margin-top:16%;
     width: 70%;
 }
-
+/********** Marcas *********+*/
 .marcas {
     background: url('img/bgMarcas.jpg') center center no-repeat;
     background-size: cover;
@@ -263,6 +321,7 @@ h1,h2,h3,h4 {
     -webkit-filter: drop-shadow(2px 3px 10px#ffffcd8c);
     filter: drop-shadow(2px 3px 10px #ffffcd8c);
 }
+/********** Contacto *********+*/
 .contacto {
     background: url('img/bgContacto1.jpg') center center no-repeat;
     background-size: cover;
