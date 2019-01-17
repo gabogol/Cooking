@@ -1,3 +1,11 @@
+/*
+Theme Name: Cooking
+Author: Buena Buena
+Author URI: https:/buenabuena.cl/
+Description: Para Cooking Media 2019
+Version: 1.1 BETA
+*/
+
 *,
 *:before,
 *:after {
@@ -103,6 +111,12 @@ h1,h2,h3,h4 {
     text-shadow: #000 2px 3px 3px;
 }
 .somos .marquito {
+    /* background: url('img/marquito.png') center center no-repeat;*/
+    border: 3px solid #eaae4c;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 69px 6px rgba(255,230,181,0.41);
+    -moz-box-shadow: 10px 10px 69px 6px rgba(255,230,181,0.41);
+    box-shadow: 10px 10px 69px 6px rgba(255,230,181,0.41);
     background: url('img/marquito.png') center center no-repeat;
 }
 /********** Reel *********+*/
@@ -113,6 +127,7 @@ h1,h2,h3,h4 {
 .reel .container .row {
     height: 110vh;
 }
+
 #videoModal {
     background: transparent;
 }
@@ -262,6 +277,15 @@ h1,h2,h3,h4 {
     transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+.modal iframe{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    border: none;
+}
+.tele{
+    width: 400px;
+}
 .modal-servicios .modal-content {
     background: #000000de; 
 }
@@ -375,6 +399,7 @@ h1,h2,h3,h4 {
     .equipo #SlideEquipoMobile {
         display: none;
     }
+    
 }
 @media (max-width: 1024px) {
     
@@ -436,6 +461,7 @@ h1,h2,h3,h4 {
     .equipo #SlideEquipo {
         display: none;
     }
+    
 }
 
 
