@@ -489,11 +489,9 @@
                 </div>
                 <a class="carousel-control-prev" href="#SlideEquipoMobile" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#SlideEquipoMobile" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
                 </a>
             </div>
         </div>
@@ -540,178 +538,302 @@
         </div>
         <!--Blog-->
         <div class="blog section">
-            <div class="container-fluid">
-                <div class="row rowblog">
-                    <div class="col-3"></div>
-                    <div class="col-9">
-                        <!--Articulo-->
-                        <div class="container-fluid articulo" id="Articulo">
-                            <div class="row no-gutters">
-                                <div class="col">
-                                    <img src="img/imgEntrada2.jpg" alt="" class="img-fluid">
+            <div class="blog-desktop">
+                <div class="container-fluid">
+                    <div class="row rowblog">
+                        <div class="col-3"></div>
+                        <div class="col-9">
+                            <!--Articulo-->
+                            <div class="container articulo" id="Articulo">
+                                <div class="row ">
+                                    <div class="col">
+                                        <img src="img/imgEntrada2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-10">
+                                        <h1 class="py-5">Titulo</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero lacus,
+                                            vulputate eu enim eu, accumsan luctus nisl. Phasellus quisconsectetur
+                                            ante. Praesent feugiat, nulla ut consectetur consectetur, quam eros
+                                            vestibulum turpis, vitae iaculis nunc ex vitae odio.Suspendisse
+                                            ullamcorper tincidunt laoreet. Vivamus enim velit, hendrerit eget ultrices
+                                            vitae, dictum a risus. Pellentesque turpis nisiporttitor at commodo non,
+                                            dignissim id libero. Nunc leo turpis, rhoncus id metus eu, gravida laoreet
+                                            mauris.,Quisque sit amet elit ligula. Donec dictum lacus et nunc
+                                            accumsan, vel consectetur nunc venenatis. <br><br>Ut egestas nulla ac enim
+                                            ullamcorper, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Donec libero lacus, vulputate eu enim eu, accumsan luctus nisl. Phasellus
+                                            quisconsectetur ante. <br><br>Praesent feugiat, nulla ut consectetur
+                                            consectetur, quam eros vestibulum turpis, vitae iaculis nunc ex vitae
+                                            odio.Suspendisse ullamcorper tincidunt laoreet.</p>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                                <div class="row pt-5">
+                                    <div class="col">
+                                        <span onclick="closeBlog()" class="btn">Atrás</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-2"></div>
-                                <div class="col-8">
-                                    <h1 class="py-5 text-black">Titulo</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero lacus, vulputate eu enim eu, accumsan luctus nisl. Phasellus quisconsectetur ante. Praesent feugiat, nulla ut consectetur consectetur, quam eros vestibulum turpis, vitae iaculis nunc ex vitae odio.Suspendisse ullamcorper tincidunt laoreet. Vivamus enim velit, hendrerit eget ultrices vitae, dictum a risus. Pellentesque turpis nisiporttitor at commodo non, dignissim id libero. Nunc leo turpis, rhoncus id metus eu, gravida laoreet mauris.,Quisque sit amet elit ligula. Donec dictum lacus et nunc accumsan, vel consectetur nunc venenatis. <br><br>Ut egestas nulla ac enim ullamcorper, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero lacus, vulputate eu enim eu, accumsan luctus nisl. Phasellus quisconsectetur ante. <br><br>Praesent feugiat, nulla ut consectetur consectetur, quam eros vestibulum turpis, vitae iaculis nunc ex vitae odio.Suspendisse ullamcorper tincidunt laoreet. Vivamus enim velit, hendrerit eget ultrices vitae, dictum a risus. Pellentesque turpis nisiporttitor at commodo non, dignissim id libero. Nunc leo turpis, rhoncus id metus eu, gravida laoreet mauris.</p>
-                                </div>
-                                <div class="col-2"></div>
-                            </div>
-                            <div class="row pt-5">
-                                <div class="col">
-                                    <a href="">Atrás</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Slide Blog-->
-                        <div id="slideBlog" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="card">
-                                                    <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
-                                                    <div class="card-body">
-                                                        <h4 class="card-title">Lorem ipsum</h4>
-                                                        <h6>Vehicula est vitae</h6>
-                                                        <span class="small">12 ENE 2019</span>
-                                                        <p class="card-text py-4">Lorem ipsum dolor sit amet,
-                                                            consectetur adipiscing elit. Vivamus sed vulputate tortor,
-                                                            sit amet molestie sem. Quisque efficitur vehicula est vitae
-                                                            ultrices. </p>
-                                                        <a href="#" class="btn btn-card"><span>Leer más</span></a>
+                            <!--Slide Blog-->
+                            <div id="slideBlog" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Lorem ipsum</h4>
+                                                            <h6>Vehicula est vitae</h6>
+                                                            <span class="small">12 ENE 2019</span>
+                                                            <p class="card-text py-4">Lorem ipsum dolor sit amet,
+                                                                consectetur adipiscing elit. Vivamus sed vulputate
+                                                                tortor,
+                                                                sit amet molestie sem. Quisque efficitur vehicula est
+                                                                vitae
+                                                                ultrices. </p>
+                                                            <a onclick="openBlog()" class="btn btn-card"><span>Leer más</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Lorem ipsum</h4>
+                                                            <h6>Vehicula est vitae</h6>
+                                                            <span class="small">12 ENE 2019</span>
+                                                            <p class="card-text py-4">Lorem ipsum dolor sit amet,
+                                                                consectetur adipiscing elit. Vivamus sed vulputate
+                                                                tortor,
+                                                                sit amet molestie sem. Quisque efficitur vehicula est
+                                                                vitae
+                                                                ultrices. </p>
+                                                            <a href="#" class="btn btn-card"><span>Leer más</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Lorem ipsum</h4>
+                                                            <h6>Vehicula est vitae</h6>
+                                                            <span class="small">12 ENE 2019</span>
+                                                            <p class="card-text py-4">Lorem ipsum dolor sit amet,
+                                                                consectetur adipiscing elit. Vivamus sed vulputate
+                                                                tortor,
+                                                                sit amet molestie sem. Quisque efficitur vehicula est
+                                                                vitae
+                                                                ultrices. </p>
+                                                            <a href="#" class="btn btn-card"><span>Leer más</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Lorem ipsum</h4>
+                                                            <h6>Vehicula est vitae</h6>
+                                                            <span class="small">12 ENE 2019</span>
+                                                            <p class="card-text py-4">Lorem ipsum dolor sit amet,
+                                                                consectetur adipiscing elit. Vivamus sed vulputate
+                                                                tortor,
+                                                                sit amet molestie sem. Quisque efficitur vehicula est
+                                                                vitae
+                                                                ultrices. </p>
+                                                            <a href="#" class="btn btn-card"><span>Leer más</span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col">
-                                                <div class="card">
-                                                    <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
-                                                    <div class="card-body">
-                                                        <h4 class="card-title">Lorem ipsum</h4>
-                                                        <h6>Vehicula est vitae</h6>
-                                                        <span class="small">12 ENE 2019</span>
-                                                        <p class="card-text py-4">Lorem ipsum dolor sit amet,
-                                                            consectetur adipiscing elit. Vivamus sed vulputate tortor,
-                                                            sit amet molestie sem. Quisque efficitur vehicula est vitae
-                                                            ultrices. </p>
-                                                        <a href="#" class="btn btn-card"><span>Leer más</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Lorem ipsum</h4>
+                                                            <h6>Vehicula est vitae</h6>
+                                                            <span class="small">12 ENE 2019</span>
+                                                            <p class="card-text py-4">Lorem ipsum dolor sit amet,
+                                                                consectetur adipiscing elit. Vivamus sed vulputate
+                                                                tortor,
+                                                                sit amet molestie sem. Quisque efficitur vehicula est
+                                                                vitae
+                                                                ultrices. </p>
+                                                            <a href="#" class="btn btn-card"><span>Leer más</span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="card">
-                                                    <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
-                                                    <div class="card-body">
-                                                        <h4 class="card-title">Lorem ipsum</h4>
-                                                        <h6>Vehicula est vitae</h6>
-                                                        <span class="small">12 ENE 2019</span>
-                                                        <p class="card-text py-4">Lorem ipsum dolor sit amet,
-                                                            consectetur adipiscing elit. Vivamus sed vulputate tortor,
-                                                            sit amet molestie sem. Quisque efficitur vehicula est vitae
-                                                            ultrices. </p>
-                                                        <a href="#" class="btn btn-card"><span>Leer más</span></a>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Lorem ipsum</h4>
+                                                            <h6>Vehicula est vitae</h6>
+                                                            <span class="small">12 ENE 2019</span>
+                                                            <p class="card-text py-4">Lorem ipsum dolor sit amet,
+                                                                consectetur adipiscing elit. Vivamus sed vulputate
+                                                                tortor,
+                                                                sit amet molestie sem. Quisque efficitur vehicula est
+                                                                vitae
+                                                                ultrices. </p>
+                                                            <a href="#" class="btn btn-card"><span>Leer más</span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="card">
-                                                    <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
-                                                    <div class="card-body">
-                                                        <h4 class="card-title">Lorem ipsum</h4>
-                                                        <h6>Vehicula est vitae</h6>
-                                                        <span class="small">12 ENE 2019</span>
-                                                        <p class="card-text py-4">Lorem ipsum dolor sit amet,
-                                                            consectetur adipiscing elit. Vivamus sed vulputate tortor,
-                                                            sit amet molestie sem. Quisque efficitur vehicula est vitae
-                                                            ultrices. </p>
-                                                        <a href="#" class="btn btn-card"><span>Leer más</span></a>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Lorem ipsum</h4>
+                                                            <h6>Vehicula est vitae</h6>
+                                                            <span class="small">12 ENE 2019</span>
+                                                            <p class="card-text py-4">Lorem ipsum dolor sit amet,
+                                                                consectetur adipiscing elit. Vivamus sed vulputate
+                                                                tortor,
+                                                                sit amet molestie sem. Quisque efficitur vehicula est
+                                                                vitae
+                                                                ultrices. </p>
+                                                            <a href="#" class="btn btn-card"><span>Leer más</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Lorem ipsum</h4>
+                                                            <h6>Vehicula est vitae</h6>
+                                                            <span class="small">12 ENE 2019</span>
+                                                            <p class="card-text py-4">Lorem ipsum dolor sit amet,
+                                                                consectetur adipiscing elit. Vivamus sed vulputate
+                                                                tortor,
+                                                                sit amet molestie sem. Quisque efficitur vehicula est
+                                                                vitae
+                                                                ultrices. </p>
+                                                            <a href="#" class="btn btn-card"><span>Leer más</span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="card">
-                                                    <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
-                                                    <div class="card-body">
-                                                        <h4 class="card-title">Lorem ipsum</h4>
-                                                        <h6>Vehicula est vitae</h6>
-                                                        <span class="small">12 ENE 2019</span>
-                                                        <p class="card-text py-4">Lorem ipsum dolor sit amet,
-                                                            consectetur adipiscing elit. Vivamus sed vulputate tortor,
-                                                            sit amet molestie sem. Quisque efficitur vehicula est vitae
-                                                            ultrices. </p>
-                                                        <a href="#" class="btn btn-card"><span>Leer más</span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="card">
-                                                    <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
-                                                    <div class="card-body">
-                                                        <h4 class="card-title">Lorem ipsum</h4>
-                                                        <h6>Vehicula est vitae</h6>
-                                                        <span class="small">12 ENE 2019</span>
-                                                        <p class="card-text py-4">Lorem ipsum dolor sit amet,
-                                                            consectetur adipiscing elit. Vivamus sed vulputate tortor,
-                                                            sit amet molestie sem. Quisque efficitur vehicula est vitae
-                                                            ultrices. </p>
-                                                        <a href="#" class="btn btn-card"><span>Leer más</span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="card">
-                                                    <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
-                                                    <div class="card-body">
-                                                        <h4 class="card-title">Lorem ipsum</h4>
-                                                        <h6>Vehicula est vitae</h6>
-                                                        <span class="small">12 ENE 2019</span>
-                                                        <p class="card-text py-4">Lorem ipsum dolor sit amet,
-                                                            consectetur adipiscing elit. Vivamus sed vulputate tortor,
-                                                            sit amet molestie sem. Quisque efficitur vehicula est vitae
-                                                            ultrices. </p>
-                                                        <a href="#" class="btn btn-card"><span>Leer más</span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="card">
-                                                    <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
-                                                    <div class="card-body">
-                                                        <h4 class="card-title">Lorem ipsum</h4>
-                                                        <h6>Vehicula est vitae</h6>
-                                                        <span class="small">12 ENE 2019</span>
-                                                        <p class="card-text py-4">Lorem ipsum dolor sit amet,
-                                                            consectetur adipiscing elit. Vivamus sed vulputate tortor,
-                                                            sit amet molestie sem. Quisque efficitur vehicula est vitae
-                                                            ultrices. </p>
-                                                        <a href="#" class="btn btn-card"><span>Leer más</span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a class="carousel-control-prev" href="#slideBlog" role="button" data-slide="prev">
+                                    <span class="text-uppercase">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#slideBlog" role="button" data-slide="next">
+                                    <span class="text-uppercase">Siguiente</span>
+                                </a>
                             </div>
-                            <a class="carousel-control-prev" href="#slideBlog" role="button" data-slide="prev">
-                                <span class="text-uppercase">Anterior</span>
-                            </a>
-                            <a class="carousel-control-next" href="#slideBlog" role="button" data-slide="next">
-                                <span class="text-uppercase">Siguiente</span>
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--Blog Mobile-->
+            <div class="blog-mobile">
+                <div class="container">
+                    <!--Articulo-->
+                    <div class="container articulo" id="Articulo">
+                        <div class="row ">
+                            <div class="col">
+                                <img src="img/imgEntrada2.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <h1 class="py-5">Titulo</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero lacus,
+                                    vulputate eu enim eu, accumsan luctus nisl. Phasellus quisconsectetur
+                                    ante. Praesent feugiat, nulla ut consectetur consectetur, quam eros
+                                    vestibulum turpis, vitae iaculis nunc ex vitae odio.Suspendisse
+                                    ullamcorper tincidunt laoreet. Vivamus enim velit, hendrerit eget ultrices
+                                    vitae, dictum a risus. Pellentesque turpis nisiporttitor at commodo non,
+                                    dignissim id libero. Nunc leo turpis, rhoncus id metus eu, gravida laoreet
+                                    mauris.,Quisque sit amet elit ligula. Donec dictum lacus et nunc
+                                    accumsan, vel consectetur nunc venenatis. <br><br>Ut egestas nulla ac enim
+                                    ullamcorper, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec libero lacus, vulputate eu enim eu, accumsan luctus nisl. Phasellus
+                                    quisconsectetur ante. <br><br>Praesent feugiat, nulla ut consectetur
+                                    consectetur, quam eros vestibulum turpis, vitae iaculis nunc ex vitae
+                                    odio.Suspendisse ullamcorper tincidunt laoreet.</p>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="row pt-5">
+                            <div class="col">
+                                <span onclick="closeBlog()" class="btn">Atrás</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row rowblog">
+                        <div class="col align-self-center">
+                            <!--Slide Blog-->
+                            <div id="slideBlogMobile" class="carousel" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="container">
+                                            <div class="row pt-5">
+                                                <div class="col-md-1 col-0"></div>
+                                                <div class="col-md-10 col-12 pt-3 pt-md-5">
+                                                    <div class="card">
+                                                        <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Blog Mobile</h4>
+                                                            <h6>Vehicula est vitae</h6>
+                                                            <a onclick="openBlog()" class="btn btn-card"><span>Leer más</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1 col-0"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <div class="container">
+                                            <div class="row pt-5">
+                                                <div class="col-md-1 col-0"></div>
+                                                <div class="col-md-10 col-12 pt-3 pt-md-5">
+                                                    <div class="card">
+                                                        <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Blog Mobile 2</h4>
+                                                            <h6>Vehicula est vitae</h6>
+                                                            <a onclick="openBlog()" class="btn btn-card"><span>Leer más</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1 col-0"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#slideBlogMobile" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#slideBlogMobile" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
         <!--Contacto-->
         <div class="contacto section">
             <div class="container-fluid">
@@ -858,6 +980,16 @@
         }
         function closeNav2() {
             document.getElementById("menuBranded").style.width = "0";
+        }
+    </script>
+    <script>
+        function openBlog() {
+            document.getElementById("Articulo").style.height = "100%";
+            document.getElementById("Articulo").style.opacity = "1";
+        }
+        function closeBlog() {
+            document.getElementById("Articulo").style.height = "0";
+            document.getElementById("Articulo").style.opacity = "0";
         }
     </script>
 </body>
