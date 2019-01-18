@@ -742,10 +742,10 @@
             </div>
             <!--Blog Mobile-->
             <div class="blog-mobile">
-                <div class="container">
+                <div class="container-fluid">
                     <!--Articulo-->
-                    <div class="container articulo" id="Articulo">
-                        <div class="row ">
+                    <div class="container articulo" id="ArticuloMobile">
+                        <div class="row">
                             <div class="col">
                                 <img src="img/imgEntrada2.jpg" alt="" class="img-fluid">
                             </div>
@@ -773,14 +773,14 @@
                         </div>
                         <div class="row pt-5">
                             <div class="col">
-                                <span onclick="closeBlog()" class="btn">Atrás</span>
+                                <span onclick="closeBlog2()" class="btn">Atrás</span>
                             </div>
                         </div>
                     </div>
                     <div class="row rowblog">
                         <div class="col align-self-center">
                             <!--Slide Blog-->
-                            <div id="slideBlogMobile" class="carousel" data-ride="carousel">
+                            <div id="slideBlogMobile" class="carousel carousel-fade" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="container">
@@ -790,9 +790,10 @@
                                                     <div class="card">
                                                         <img src="img/imgEntrada.jpg" class="card-img-top" alt="">
                                                         <div class="card-body">
-                                                            <h4 class="card-title">Blog Mobile</h4>
+                                                            <h4 class="card-title">Blog Mobile 1</h4>
                                                             <h6>Vehicula est vitae</h6>
-                                                            <a onclick="openBlog()" class="btn btn-card"><span>Leer más</span></a>
+                                                            <a onclick="openBlog2()" class="btn btn-card"><span>Leer
+                                                                    más</span></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -800,7 +801,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item ">
+                                    <div class="carousel-item">
                                         <div class="container">
                                             <div class="row pt-5">
                                                 <div class="col-md-1 col-0"></div>
@@ -810,7 +811,7 @@
                                                         <div class="card-body">
                                                             <h4 class="card-title">Blog Mobile 2</h4>
                                                             <h6>Vehicula est vitae</h6>
-                                                            <a onclick="openBlog()" class="btn btn-card"><span>Leer más</span></a>
+                                                            <a class="btn btn-card"><span>Leer más</span></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -824,7 +825,6 @@
                                 </a>
                                 <a class="carousel-control-next" href="#slideBlogMobile" role="button" data-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                </a>
                                 </a>
                             </div>
                         </div>
@@ -990,6 +990,14 @@
         function closeBlog() {
             document.getElementById("Articulo").style.height = "0";
             document.getElementById("Articulo").style.opacity = "0";
+        }
+        function openBlog2() {
+            document.getElementById("ArticuloMobile").style.height = "100%";
+            document.getElementById("ArticuloMobile").style.opacity = "1";
+        }
+        function closeBlog2() {
+            document.getElementById("ArticuloMobile").style.height = "0";
+            document.getElementById("ArticuloMobile").style.opacity = "0";
         }
     </script>
 </body>

@@ -360,6 +360,101 @@ h1,h2,h3,h4 {
     -webkit-filter: drop-shadow(2px 3px 10px#ffffcd8c);
     filter: drop-shadow(2px 3px 10px #ffffcd8c);
 }
+/********** Blog *********+*/
+.blog .rowblog {
+    height: 100vh;;
+} 
+.blog .blog-mobile {
+    background: url('img/bgBlogmobile.jpg') top center no-repeat;
+    background-size: contain;
+    background-color: #000;
+}
+.blog .col-3 {
+    background: url('img/bgBlog.jpg') top center no-repeat;
+    background-size: cover;
+}
+.blog .col-9 {
+    background: url('img/bgEntradas.jpg') top center no-repeat;
+    background-size: 100% 100%;
+}
+.blog .card {
+    color: #000;
+    text-align: center;
+}
+.blog .card-title {
+    color: #000;
+}
+.blog .btn-card {
+    background: #000;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 25px 0;
+    border: 5px solid white;
+    margin: 5px;
+    box-shadow: 0 0 1px 1px #000;
+    color: #fff !important;
+    transition: all .5;
+}
+.blog .btn-card:hover {
+    box-shadow: 0 0 2px 2px #ffc107;
+}
+.blog .carousel-control-next, .blog .carousel-control-prev {
+    position: absolute;
+    top: inherit;
+    bottom: 3%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 80%;
+    color: #000;
+    font-size: 2em;
+    text-align: center;
+    height: 15%;
+    opacity: 1;
+}
+.blog .blog-mobile .carousel-control-next, .blog .blog-mobile .carousel-control-prev {
+    font-size: 2em;
+    text-align: center;
+    opacity: 1;
+    width: 25%;
+    top: 35%;
+}
+
+.blog .articulo {
+    color: #000;
+    background: #fff;
+    text-align: center;
+    z-index: 999;
+    overflow-y: hidden;
+    transition: all .5s;
+    position: fixed;
+    opacity: 0;
+    max-width: 74%;
+    height: 0;
+}
+.blog .blog-mobile .articulo {
+    color: #000;
+    background: #fff;
+    text-align: center;
+    z-index: 999;
+    overflow-y: hidden;
+    transition: all .5s;
+    position: absolute;
+    opacity: 0;
+    max-width: 100%;
+    height: 0;
+}
+.blog .articulo h1 {
+    color: #000 !important;
+}
+.blog #slideBlog {
+    margin-top: -5%;
+}
+
 /********** Contacto *********+*/
 .contacto {
     background: url('img/bgContacto1.jpg') center center no-repeat;
@@ -384,6 +479,9 @@ h1,h2,h3,h4 {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
+    }
+    .blog-mobile {
+        display: none !important;
     }
 }
 @media (min-width: 576px) {
@@ -428,6 +526,11 @@ h1,h2,h3,h4 {
     }
     
     
+}
+@media (max-width: 992px) {
+    .blog-desktop {
+        display: none !important;
+    }
 }
 @media (max-width: 767px){
     .somos .marquito {
