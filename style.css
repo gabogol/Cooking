@@ -542,11 +542,18 @@ video::-webkit-media-controls {
     .somos {
         background: url('img/bgSomosmobile.jpg') center top no-repeat;
     }
+    .home {
+        background: url('img/bgHomemobile.jpg') center center no-repeat;
+        background-size: cover;
+    }
     .servicios .container-fluid .row {
         height: 100vh;
     }
     .contacto .marquito2 {
         background: none;
+    }
+    #section0 .layer {
+        bottom: 15%;
     }
 }
 @media (max-width: 576px) {
