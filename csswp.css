@@ -393,16 +393,11 @@ video::-webkit-media-controls {
 .blog .rowblog {
     height: 100vh;;
 } 
-.blog .blog-mobile {
-    background: url('img/bgBlogmobile.jpg') top center no-repeat;
-    background-size: contain;
-    background-color: #000;
-}
 .blog .col-3 {
     background: url('img/bgBlog.jpg') top center no-repeat;
     background-size: cover;
 }
-.blog .col-9 {
+.blog .col-lg-9 {
     background: url('img/bgEntradas.jpg') top center no-repeat;
     background-size: 100% 100%;
 }
@@ -445,14 +440,6 @@ video::-webkit-media-controls {
     height: 15%;
     opacity: 1;
 }
-.blog .blog-mobile .carousel-control-next, .blog .blog-mobile .carousel-control-prev {
-    font-size: 2em;
-    text-align: center;
-    opacity: 1;
-    width: 25%;
-    top: 35%;
-}
-
 .blog .articulo {
     color: #000;
     background: #fff;
@@ -465,17 +452,22 @@ video::-webkit-media-controls {
     max-width: 74%;
     height: 0;
 }
-.blog .blog-mobile .articulo {
+#ArticuloMobile {
     color: #000;
     background: #fff;
     text-align: center;
     z-index: 999;
     overflow-y: hidden;
     transition: all .5s;
-    position: absolute;
+    position: fixed;
     opacity: 0;
-    max-width: 100%;
+    max-width: 50%;
     height: 0;
+    left: 0;
+    top: 0;
+}
+#ArticuloMobile h3 {
+    color: #000 !important;
 }
 .blog .articulo h1 {
     color: #000 !important;
@@ -557,8 +549,19 @@ video::-webkit-media-controls {
     
 }
 @media (max-width: 992px) {
-    .blog-desktop {
+    .blog-desktop .col-3, .blog-desktop #slideBlog {
         display: none !important;
+    }
+    .blog .col-lg-9 {
+        background: url('img/bgBlogmobile.jpg') top center no-repeat;
+        background-size: contain;
+    }
+    .blog .carousel-control-next, .blog .carousel-control-prev {
+        font-size: 2em;
+        text-align: center;
+        opacity: 1;
+        width: 25%;
+        top: 35%;
     }
 }
 @media (max-width: 767px){
@@ -569,13 +572,19 @@ video::-webkit-media-controls {
     .somos {
         background: url('img/bgSomosmobile.jpg') center top no-repeat;
     }
+    .home {
+        background: url('img/bgHomemobile.jpg') center center no-repeat;
+        background-size: cover;
+    }
     .servicios .container-fluid .row {
         height: 100vh;
     }
     .contacto .marquito2 {
         background: none;
     }
-    
+    #section0 .layer {
+        bottom: 15%;
+    }
 }
 @media (max-width: 576px) {
     .reel .container .row {

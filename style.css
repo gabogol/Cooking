@@ -132,6 +132,12 @@ video::-webkit-media-controls {
     text-shadow: #000 2px 3px 3px;
 }
 .somos .marquito {
+    /* background: url('img/marquito.png') center center no-repeat;*/
+    border: 3px solid #eaae4c;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 69px 6px rgba(255,230,181,0.41);
+    -moz-box-shadow: 10px 10px 69px 6px rgba(255,230,181,0.41);
+    box-shadow: 10px 10px 69px 6px rgba(255,230,181,0.41);
     background: url('img/marquito.png') center center no-repeat;
 }
 /********** Reel *********+*/
@@ -291,6 +297,15 @@ video::-webkit-media-controls {
     transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+.modal iframe{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    border: none;
+}
+.tele{
+    width: 400px;
+}
 .modal-servicios .modal-content {
     background: #000000de; 
 }
@@ -369,6 +384,7 @@ video::-webkit-media-controls {
 .blog .rowblog {
     height: 100vh;;
 } 
+
 .blog .col-3 {
     background: url('img/bgBlog.jpg') top center no-repeat;
     background-size: cover;
