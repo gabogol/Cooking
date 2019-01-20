@@ -428,7 +428,7 @@ video::-webkit-media-controls {
     max-width: 74%;
     height: 0;
 }
-.blog-mobile #ArticuloMobile {
+#ArticuloMobile {
     color: #000;
     background: #fff;
     text-align: center;
@@ -437,8 +437,13 @@ video::-webkit-media-controls {
     transition: all .5s;
     position: fixed;
     opacity: 0;
-    max-width: 100%;
+    max-width: 50%;
     height: 0;
+    left: 0;
+    top: 0;
+}
+#ArticuloMobile h3 {
+    color: #000 !important;
 }
 .blog .articulo h1 {
     color: #000 !important;
