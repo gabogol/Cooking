@@ -545,40 +545,6 @@
                     <div class="row rowblog">
                         <div class="col-3"></div>
                         <div class="col-12 col-lg-9">
-                            <!--Articulo-->
-                            <div class="container articulo" id="Articulo">
-                                <div class="row ">
-                                    <div class="col">
-                                        <img src="img/imgEntrada2.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-1"></div>
-                                    <div class="col-10">
-                                        <h1 class="py-5">Titulo</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero lacus,
-                                            vulputate eu enim eu, accumsan luctus nisl. Phasellus quisconsectetur
-                                            ante. Praesent feugiat, nulla ut consectetur consectetur, quam eros
-                                            vestibulum turpis, vitae iaculis nunc ex vitae odio.Suspendisse
-                                            ullamcorper tincidunt laoreet. Vivamus enim velit, hendrerit eget ultrices
-                                            vitae, dictum a risus. Pellentesque turpis nisiporttitor at commodo non,
-                                            dignissim id libero. Nunc leo turpis, rhoncus id metus eu, gravida laoreet
-                                            mauris.,Quisque sit amet elit ligula. Donec dictum lacus et nunc
-                                            accumsan, vel consectetur nunc venenatis. <br><br>Ut egestas nulla ac enim
-                                            ullamcorper, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Donec libero lacus, vulputate eu enim eu, accumsan luctus nisl. Phasellus
-                                            quisconsectetur ante. <br><br>Praesent feugiat, nulla ut consectetur
-                                            consectetur, quam eros vestibulum turpis, vitae iaculis nunc ex vitae
-                                            odio.Suspendisse ullamcorper tincidunt laoreet.</p>
-                                    </div>
-                                    <div class="col-1"></div>
-                                </div>
-                                <div class="row pt-5">
-                                    <div class="col">
-                                        <span onclick="closeBlog()" class="btn">Atrás</span>
-                                    </div>
-                                </div>
-                            </div>
                             <!--Slide Blog-->
                             <div id="slideBlog" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
@@ -598,7 +564,7 @@
                                                                 sit amet molestie sem. Quisque efficitur vehicula est
                                                                 vitae
                                                                 ultrices. </p>
-                                                            <a onclick="openBlog()" class="btn btn-card"><span>Leer más</span></a>
+                                                            <a data-toggle="modal" data-target="#blog01" class="btn btn-card"><span>Leer más</span></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -762,16 +728,14 @@
                                                         <div class="card-body">
                                                             <h4 class="card-title">Blog Mobile 1</h4>
                                                             <h6>Vehicula est vitae</h6>
-                                                            <a onclick="openBlog2()" class="btn btn-card"><span>Leer
+                                                            <a data-toggle="modal" data-target="#blog01" class="btn btn-card"><span>Leer
                                                                     más</span></a>
                                                         </div>
                                                     </div>
-
                                                 </div>
                                                 <div class="col-md-1 col-0"></div>
                                             </div>
                                         </div>
-
                                     </div>
                                     <div class="carousel-item">
                                         <div class="container">
@@ -788,42 +752,6 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-1 col-0"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--Articulo mobile-->
-                                    <div class="container" id="ArticuloMobile">
-                                        <div class="row">
-                                            <div class="col">
-                                                <img src="img/imgEntrada2.jpg" alt="" class="img-fluid">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col px-2">
-                                                <h3 class="py-2">Titulo</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                                                    libero lacus,
-                                                    vulputate eu enim eu, accumsan luctus nisl. Phasellus
-                                                    quisconsectetur
-                                                    ante. Praesent feugiat, nulla ut consectetur consectetur, quam
-                                                    eros
-                                                    vestibulum turpis, vitae iaculis nunc ex vitae
-                                                    odio.Suspendisse
-                                                    ullamcorper tincidunt laoreet. Vivamus enim velit, hendrerit
-                                                    eget ultrices
-                                                    vitae, dictum a risus. Pellentesque turpis nisiporttitor at
-                                                    commodo non,
-                                                    dignissim id libero. Nunc leo turpis, rhoncus id metus eu,
-                                                    gravida laoreet
-                                                    mauris.,Quisque sit amet elit ligula. Donec dictum lacus et
-                                                    nunc
-                                                    accumsan, vel consectetur nunc venenatis. <br><br>Ut egestas
-                                                    nulla ac enim
-                                                    ullamcorper, Lorem ipsum dolor sit amet, consectetur
-                                                    adipiscing elit.
-                                                    Donec libero lacus, vulputate eu enim eu, accumsan luctus nisl.
-                                                    Phasellus.</p>
-                                                    <span onclick="closeBlog2()" class="btn">Atrás</span>
                                             </div>
                                         </div>
                                     </div>
@@ -944,6 +872,51 @@
             </div>
         </div>
     </div>
+    <!--Blog Modal1-->
+    <div class="modal fade modal-blog" id="blog01" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <a href="" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </a>
+                        <div class="row">
+                            <div class="col">
+                                <img src="img/imgEntrada2.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <h1 class="py-lg-5 py-3">Titulo</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero lacus,
+                                    vulputate eu enim eu, accumsan luctus nisl. Phasellus quisconsectetur
+                                    ante. Praesent feugiat, nulla ut consectetur consectetur, quam eros
+                                    vestibulum turpis, vitae iaculis nunc ex vitae odio.Suspendisse
+                                    ullamcorper tincidunt laoreet. Vivamus enim velit, hendrerit eget ultrices
+                                    vitae, dictum a risus. Pellentesque turpis nisiporttitor at commodo non,
+                                    dignissim id libero. Nunc leo turpis, rhoncus id metus eu, gravida laoreet
+                                    mauris.,Quisque sit amet elit ligula. Donec dictum lacus et nunc
+                                    accumsan, vel consectetur nunc venenatis. <br><br>Ut egestas nulla ac enim
+                                    ullamcorper, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec libero lacus, vulputate eu enim eu, accumsan luctus nisl. Phasellus
+                                    quisconsectetur ante. <br><br>Praesent feugiat, nulla ut consectetur
+                                    consectetur, quam eros vestibulum turpis, vitae iaculis nunc ex vitae
+                                    odio.Suspendisse ullamcorper tincidunt laoreet.</p>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="row pt-5">
+                            <div class="col">
+                                <span data-dismiss="modal" class="btn">Atrás</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -988,24 +961,6 @@
         }
         function closeNav2() {
             document.getElementById("menuBranded").style.width = "0";
-        }
-    </script>
-    <script>
-        function openBlog() {
-            document.getElementById("Articulo").style.height = "100%";
-            document.getElementById("Articulo").style.opacity = "1";
-        }
-        function closeBlog() {
-            document.getElementById("Articulo").style.height = "0";
-            document.getElementById("Articulo").style.opacity = "0";
-        }
-        function openBlog2() {
-            document.getElementById("ArticuloMobile").style.height = "100%";
-            document.getElementById("ArticuloMobile").style.opacity = "1";
-        }
-        function closeBlog2() {
-            document.getElementById("ArticuloMobile").style.height = "0";
-            document.getElementById("ArticuloMobile").style.opacity = "0";
         }
     </script>
 </body>

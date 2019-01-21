@@ -120,7 +120,7 @@ h1,h2,h3,h4 {
     z-index: 4;
     width: 100%;
     left: 0;
-    bottom: 5%;
+    bottom: 8%;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
@@ -440,40 +440,15 @@ video::-webkit-media-controls {
     height: 15%;
     opacity: 1;
 }
-.blog .articulo {
-    color: #000;
-    background: #fff;
-    text-align: center;
-    z-index: 999;
-    overflow-y: hidden;
-    transition: all .5s;
-    position: fixed;
-    opacity: 0;
-    max-width: 74%;
-    height: 0;
-}
-#ArticuloMobile {
-    color: #000;
-    background: #fff;
-    text-align: center;
-    z-index: 999;
-    overflow-y: hidden;
-    transition: all .5s;
-    position: fixed;
-    opacity: 0;
-    max-width: 50%;
-    height: 0;
-    left: 0;
-    top: 0;
-}
-#ArticuloMobile h3 {
-    color: #000 !important;
-}
-.blog .articulo h1 {
-    color: #000 !important;
-}
 .blog #slideBlog {
-    margin-top: -5%;
+    margin-top: -2%;
+}
+.modal-blog .modal-full .modal-body {
+    background: #fff;
+    color: #000;
+}
+.modal-blog h1, .close {
+    color: #000 !important;
 }
 
 /********** Contacto *********+*/
