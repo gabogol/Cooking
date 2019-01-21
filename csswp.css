@@ -120,7 +120,7 @@ h1,h2,h3,h4 {
     z-index: 4;
     width: 100%;
     left: 0;
-    bottom: 10%;
+    bottom: 5%;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
@@ -518,10 +518,8 @@ video::-webkit-media-controls {
     .equipo #SlideEquipoMobile {
         display: none;
     }
-    
 }
 @media (max-width: 1024px) {
-    
     .clientes {
         background: url('img/bgClientesMobile.jpg') center center no-repeat;
         background-size: cover;
@@ -545,8 +543,6 @@ video::-webkit-media-controls {
     .contacto .container-fluid {
         margin-top: 15%;
     }
-    
-    
 }
 @media (max-width: 992px) {
     .blog-desktop .col-3, .blog-desktop #slideBlog {
